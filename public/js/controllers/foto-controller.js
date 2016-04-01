@@ -28,7 +28,7 @@ angular.module('alurapic').controller('FotoController', function($scope, $routeP
 					$scope.foto = {};
 				}
 
-				$scope.focado = true;
+				//$scope.focado = true;
 
 			})
 			.catch(function(erro) {

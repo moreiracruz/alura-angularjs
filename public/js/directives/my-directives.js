@@ -31,20 +31,22 @@ angular.module('myDirectives', [])
 	var ddo = {};
 
 	ddo.restrict = 'A';
-	ddo.scope = {
-		focado: '='
-	}
+	//ddo.scope = {
+	//	focado: '='
+	//}
 
 	ddo.link = function(scope, element) {
 
-		scope.$watch('focado', function() {
+		//scope.$watch('focado', function() {
+			//if (scope.focado) {
+			//	element[0].focus();
+			//	scope.focado = false;
+			//}
+		//});
 
-			if (scope.focado) {
+		scope.$on('fotoCadastrada', function() {
 
-				element[0].focus();
-				scope.focado = false;
-
-			}
+			element[0].focus();
 
 		});
 
@@ -52,13 +54,3 @@ angular.module('myDirectives', [])
 
 	return ddo;
 });
-
-
-            
-                
-                    
-                
-                
-                    
-                
-            
